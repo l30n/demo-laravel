@@ -25,7 +25,7 @@ const loadFromServer = async () => {
     loading.value = true;
 
     const resp = await axios.get(
-        "http://localhost/api/notifications?page=" +
+        "/api/notifications?page=" +
             serverOptions.value.page +
             "&limit=" +
             serverOptions.value.rowsPerPage
